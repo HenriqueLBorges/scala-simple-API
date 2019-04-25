@@ -14,11 +14,14 @@ libraryDependencies ++= Seq(
   "com.squareup.okhttp3" % "okhttp" % "3.14.1",
   "com.sksamuel.elastic4s" %% "elastic4s-core" % "6.5.1",
   "com.sksamuel.elastic4s" %% "elastic4s-http" % "6.5.1",
-  "com.sksamuel.elastic4s" %% "elastic4s-http-streams" % "6.5.1"
+  "com.sksamuel.elastic4s" %% "elastic4s-http-streams" % "6.5.1",
+  "org.scalactic" %% "scalactic" % "3.0.5",
+  "org.scalatest" %% "scalatest" % "3.0.5" % "test"
 )
 
 resolvers += "twitter-repo" at "https://maven.twttr.com"
 resolvers += Resolver.url("bintray-sbt-plugins", url("https://dl.bintray.com/eed3si9n/sbt-plugins/"))(Resolver.ivyStylePatterns)
+resolvers += "Artima Maven Repository" at "http://repo.artima.com/releases"
 
 mainClass in assembly := Some("API")
 assemblyJarName in assembly := "mutantTest-API.jar"
