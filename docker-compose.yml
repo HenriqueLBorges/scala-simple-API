@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  #Mutant API instance
+  api:
+    container_name: mutant-api
+    build: .
+    #Sets ENV vars
+    environment:
+     - NODE_ENV=local
+     - ES_HOST=http://elasticsearch
+     - ES_PORT=9200
+     - PORT=8080
+    #Exposes API port
+    ports:
+      - "8080:8080"
+
+  #Elasticsearch Instance
+  elasticsearch: 
+    container_name: elasticsearch
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.1.1
+    #Persists ES data in seperate "esdata" volume
+    volumes: 
+      - esdata:/usr/share/elasticsearch/data
+    environment:
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - discovery.type=single-node
+    #Exposess Elasticsearch ports
+    ports: 
+      - "9300:9300"
+      - "9200:9200"
+
+#Defines seperate volume for Elasticsearch data
+volumes:
+  esdata:

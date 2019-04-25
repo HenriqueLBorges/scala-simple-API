@@ -7,7 +7,7 @@
 		revision="0.1"
 		conf="runtime"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20190424213217"/>
+		date="20190424225013"/>
 	<dependencies>
 		<module organisation="com.sksamuel.elastic4s" name="elastic4s-http-streams_2.12">
 			<revision name="6.5.1" status="release" pubdate="20190128184133" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sksamuel/elastic4s" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="87">

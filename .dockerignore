@@ -1,0 +1,8 @@
+project/
+src/
+.idea/
+Dockerfile
+.dockerignore
+.git/
+docker-compose
+tests.test.js
