@@ -4,7 +4,7 @@
 		module="teste-mutant_2.12"
 		revision="0.1"
 		status="integration"
-		publication="20190424200205"
+		publication="20190424213217"
 	>
 		<description>
 		teste-mutant
@@ -41,6 +41,7 @@
 		<dependency org="com.squareup.okhttp3" name="okhttp" rev="3.14.1" conf="compile->default(compile)"/>
 		<dependency org="com.sksamuel.elastic4s" name="elastic4s-core_2.12" rev="6.5.1" conf="compile->default(compile)"/>
 		<dependency org="com.sksamuel.elastic4s" name="elastic4s-http_2.12" rev="6.5.1" conf="compile->default(compile)"/>
+		<dependency org="com.sksamuel.elastic4s" name="elastic4s-tcp_2.12" rev="6.5.1" conf="compile->default(compile)"/>
 		<dependency org="com.sksamuel.elastic4s" name="elastic4s-http-streams_2.12" rev="6.5.1" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

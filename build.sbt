@@ -14,6 +14,7 @@ libraryDependencies ++= Seq(
   "com.squareup.okhttp3" % "okhttp" % "3.14.1",
   "com.sksamuel.elastic4s" %% "elastic4s-core" % "6.5.1",
   "com.sksamuel.elastic4s" %% "elastic4s-http" % "6.5.1",
+  "com.sksamuel.elastic4s" %% "elastic4s-tcp" % "6.5.1",
   "com.sksamuel.elastic4s" %% "elastic4s-http-streams" % "6.5.1"
 )
 

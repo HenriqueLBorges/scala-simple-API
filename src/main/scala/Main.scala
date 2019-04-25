@@ -8,7 +8,9 @@ import io.finch.circe._
 import io.finch.syntax._
 import io.circe.generic.auto._
 import models.User
+import com.twitter.finagle.http.Request
 import elasticSearch.ElasticSearch
+
 import scala.collection.mutable.ListBuffer
 
 object API extends TwitterServer {
@@ -19,25 +21,29 @@ object API extends TwitterServer {
 
   def allWebsites: Endpoint[ListBuffer[String]] = get("allWebsites") {
     service.getAllWebSites().map(Ok).onFailure(e => {
-      elasticSearch.insertDocument("/allWebsites", "", "ip", 500)
+      elasticSearch.insertDocument("/allWebsites", scala.collection.immutable.Map[String,Any](), "ip", 500)
     }).onSuccess(s => {
-      elasticSearch.insertDocument("/allWebsites", "", "ip", 200)
+      elasticSearch.insertDocument("/allWebsites", scala.collection.immutable.Map[String,Any](), "ip", 200)
     })
   }
 
   def allUsers: Endpoint[ListBuffer[scala.collection.mutable.Map[String,String]]] = get("allUsers" :: paramOption ("sort")) { sort: Option[String] =>
+    var params = scala.collection.immutable.Map[String,Any]()
+    params += ("sort" -> sort.getOrElse(""))
     service.getAllUsers(sort.getOrElse("")).map(Ok).onFailure(e => {
-      elasticSearch.insertDocument("/getAllUsers", "", "ip", 500)
+      elasticSearch.insertDocument("/getAllUsers", params, "ip", 500)
     }).onSuccess(s => {
-      elasticSearch.insertDocument("/getAllUsers", "", "ip", 200)
+      elasticSearch.insertDocument("/getAllUsers", params, "ip", 200)
     })
   }
 
   def search: Endpoint[ListBuffer[User]] = get("search" :: paramOption ("name")) { name: Option[String] =>
+    var params = scala.collection.immutable.Map[String,Any]()
+    params += ("name" -> name.getOrElse(""))
     service.search(name.getOrElse("")).map(Ok).onFailure(e => {
-      elasticSearch.insertDocument("/search", "", "ip", 500)
+      elasticSearch.insertDocument("/search", params, "ip", 500)
     }).onSuccess(s => {
-      elasticSearch.insertDocument("/search", "", "ip", 200)
+      elasticSearch.insertDocument("/search", params, "ip", 200)
     })
 
   }
