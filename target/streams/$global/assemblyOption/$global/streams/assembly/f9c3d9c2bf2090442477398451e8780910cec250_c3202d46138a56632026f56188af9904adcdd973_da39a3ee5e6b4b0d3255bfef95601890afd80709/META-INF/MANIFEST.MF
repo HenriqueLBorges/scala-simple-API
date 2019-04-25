@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Implementation-Title: iteratee
+Implementation-Version: 0.9.0
+Specification-Vendor: io.circe
+Specification-Title: iteratee
+Implementation-Vendor-Id: io.circe
+Specification-Version: 0.9.0
+Implementation-URL: https://github.com/circe/circe-iteratee
+Vcs-Release-Tag: v0.9.0
+Implementation-Vendor: io.circe
+Vcs-Release-Hash: 5aac11b3198bdb550f60bd38d91b3d86ebce1b93
+

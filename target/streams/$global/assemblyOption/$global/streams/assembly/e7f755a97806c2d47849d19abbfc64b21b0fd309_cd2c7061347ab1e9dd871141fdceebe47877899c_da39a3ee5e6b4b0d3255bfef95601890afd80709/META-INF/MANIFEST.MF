@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: exts
+Implementation-Version: 1.60.0
+Specification-Vendor: com.sksamuel.exts
+Specification-Title: exts
+Implementation-Vendor-Id: com.sksamuel.exts
+Specification-Version: 1.60.0
+Vcs-Release-Tag: v1.60.0
+Implementation-Vendor: com.sksamuel.exts
+Vcs-Release-Hash: 473f51cb15c78a8da93f0e3d11686812b0c01d60
+

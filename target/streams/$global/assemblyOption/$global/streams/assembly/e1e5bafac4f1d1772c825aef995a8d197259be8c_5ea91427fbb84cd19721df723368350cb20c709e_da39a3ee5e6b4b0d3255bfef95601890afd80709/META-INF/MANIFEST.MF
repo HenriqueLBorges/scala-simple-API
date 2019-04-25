@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Implementation-Title: twitter
+Implementation-Version: 18.7.0
+Specification-Vendor: io.iteratee
+Specification-Title: twitter
+Implementation-Vendor-Id: io.iteratee
+Specification-Version: 18.7.0
+Implementation-URL: https://github.com/travisbrown/iteratee-twitter
+Vcs-Release-Tag: v18.7.0
+Implementation-Vendor: io.iteratee
+Vcs-Release-Hash: b99c4c6350d63f73dec08a8f05ea9f7853dc4b72
+

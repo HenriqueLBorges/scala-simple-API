@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: util
+Implementation-Version: 18.6.0
+Specification-Vendor: io.catbird
+Specification-Title: util
+Implementation-Vendor-Id: io.catbird
+Specification-Version: 18.6.0
+Implementation-URL: https://github.com/travisbrown/catbird
+Implementation-Vendor: io.catbird
+

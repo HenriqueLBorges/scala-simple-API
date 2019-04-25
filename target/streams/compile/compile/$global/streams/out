@@ -1,0 +1,4 @@
+[0m[[0m[33mwarn[0m] [0m[0m/Users/henriqueborges/Documents/GitHub/testeMutant/Scala/src/main/scala/connection/Request.scala:6:16: imported `Request' is permanently hidden by definition of class Request in package connection[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport okhttp3.Request[0m
+[0m[[0m[33mwarn[0m] [0m[0m               ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m

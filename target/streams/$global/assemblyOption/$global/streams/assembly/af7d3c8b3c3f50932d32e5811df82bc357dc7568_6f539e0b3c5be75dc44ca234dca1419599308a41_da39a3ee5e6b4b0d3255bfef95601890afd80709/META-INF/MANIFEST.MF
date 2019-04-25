@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: elastic4s-http
+Specification-Version: 6.5.1
+Specification-Vendor: com.sksamuel.elastic4s
+Implementation-Title: elastic4s-http
+Implementation-Version: 6.5.1
+Implementation-Vendor: com.sksamuel.elastic4s
+Implementation-Vendor-Id: com.sksamuel.elastic4s
+

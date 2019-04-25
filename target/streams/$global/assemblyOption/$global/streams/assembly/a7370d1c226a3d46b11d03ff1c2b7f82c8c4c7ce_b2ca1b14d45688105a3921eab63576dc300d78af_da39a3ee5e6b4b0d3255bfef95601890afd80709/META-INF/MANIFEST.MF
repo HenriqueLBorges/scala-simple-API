@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: circe
+Implementation-Version: 0.22.0
+Specification-Vendor: com.github.finagle
+Specification-Title: circe
+Implementation-Vendor-Id: com.github.finagle
+Specification-Version: 0.22.0
+Implementation-URL: https://github.com/finagle/finch
+Implementation-Vendor: com.github.finagle
+

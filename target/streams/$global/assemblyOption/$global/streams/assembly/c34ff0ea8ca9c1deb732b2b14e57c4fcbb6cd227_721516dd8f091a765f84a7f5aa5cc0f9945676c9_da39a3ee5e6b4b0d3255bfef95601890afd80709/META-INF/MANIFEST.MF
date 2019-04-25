@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: iteratee
+Implementation-Version: 0.22.0
+Specification-Vendor: com.github.finagle
+Specification-Title: iteratee
+Implementation-Vendor-Id: com.github.finagle
+Specification-Version: 0.22.0
+Implementation-URL: https://github.com/finagle/finch
+Implementation-Vendor: com.github.finagle
+

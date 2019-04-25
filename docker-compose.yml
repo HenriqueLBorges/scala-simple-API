@@ -7,7 +7,6 @@ services:
     build: .
     #Sets ENV vars
     environment:
-     - NODE_ENV=local
      - ES_HOST=http://elasticsearch
      - ES_PORT=9200
      - PORT=8080

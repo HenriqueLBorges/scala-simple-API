@@ -1,0 +1,13 @@
+JarIndex-Version: 1.0
+
+netty-tcnative-boringssl-static-2.0.19.Final.jar
+META-INF
+META-INF/maven
+META-INF/maven/io.netty
+META-INF/maven/io.netty/netty-tcnative-boringssl-static
+META-INF/native
+io
+io/netty
+io/netty/internal
+io/netty/internal/tcnative
+

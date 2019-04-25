@@ -3,14 +3,8 @@ package elasticSearch
 import com.sksamuel.elastic4s._
 import com.sksamuel.elastic4s.FieldsMapper
 import com.sksamuel.elastic4s.http.{ElasticClient, ElasticProperties}
-import com.sksamuel.elastic4s.http.Response
-import com.sksamuel.elastic4s.http.search.SearchResponse
-import com.sksamuel.elastic4s.ElasticsearchClientUri
-import com.sksamuel.elastic4s.mappings.FieldType._
 import java.text.SimpleDateFormat
 import java.util.Date
-
-import com.sksamuel.elastic4s.mappings.ObjectField
 
 /**
   * <h1>ElasticSearch</h1>
@@ -20,8 +14,8 @@ import com.sksamuel.elastic4s.mappings.ObjectField
   */
 class ElasticSearch {
   import com.sksamuel.elastic4s.http.ElasticDsl._
-  private val port = Integer.valueOf(scala.util.Properties.envOrElse("PORT", "9200"))
-  private val host = (scala.util.Properties.envOrElse("HOST", "http://localhost"))
+  private val port = Integer.valueOf(scala.util.Properties.envOrElse("ES_PORT", "9200"))
+  private val host = (scala.util.Properties.envOrElse("ES_HOST", "http://localhost"))
   val client = ElasticClient(ElasticProperties("http://localhost:9200"))
   private val index_ = "mutant"
   private val type_ = "requests"
