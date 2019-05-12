@@ -1,0 +1,4 @@
+*.3 linguist-language=text
+*.3 linguist-documentation
+*.1 linguist-documentation
+ *.* linguist-language=Scala
