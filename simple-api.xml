@@ -2,7 +2,7 @@
 <project name="teste-mutant" default="all">
   
   
-  <property file="teste-mutant.properties"/>
+  <property file="simple-api.properties"/>
   <!-- Uncomment the following property if no tests compilation is needed -->
   <!-- 
   <property name="skip.tests" value="true"/>
