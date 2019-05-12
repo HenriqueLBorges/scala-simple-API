@@ -1,6 +1,6 @@
-# Mutant Test API - Scala
+# Scala - API
 
-Developer challenge Mutant API.
+Developer challenge API.
 
 ## Elastic Search
 After every request the API saves info about the request in the mutant index. Every document in this index contains the structure: `{
@@ -366,4 +366,4 @@ After every request the API saves info about the request in the mutant index. Ev
 
 * **Notes:**
 
-  <_The test description asks to search only for the word "suite" inside the address, however address is a object with a "suite" property which in a lot of cases contains the word "suite". So I supposed that the task was to search for the word "suite" inside the property's value. I left the option of searching using other words just in case and I chose to not verify the "name" query param existence, in case nothing is passed the API will consider that the user wants to return everything._>
+  <_The test description asks to search only for the word "suite" inside the address, however address is an object with a "suite" property which in a lot of cases contains the word "suite". So I supposed that the task was to search for the word "suite" inside the property's value. I left the option of searching using other words just in case and I chose to not verify the "name" query param existence, when nothing is passed the API will consider that the user wants to return everything._>
